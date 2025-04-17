@@ -1,0 +1,34 @@
+<div id="callback" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__text">
+				<div class="title popup__title">Обратный звонок</div>
+				<div class="popup__sub-title"></div>
+				<form data-goto-error data-ajax action="components/sendmail.php" method="POST" class="form popup__form">
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя"
+							data-validate required class="input">
+					</div>
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							placeholder="Ваш телефон" data-validate required class="input">
+					</div>
+					<div class="form__line">
+						<textarea autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							placeholder="Ваше сообщение" class="input"></textarea>
+					</div>
+					<div class="form__line">
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" required checked class="checkbox__input" type="checkbox"
+								value="1" name="form[]">
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Согласен на
+									обработку персональных данных</span></label>
+						</div>
+					</div>
+					<button class="button callback__button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

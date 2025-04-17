@@ -1,0 +1,22 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title {
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	font-size: rem(60);
+
+	&:not(:last-child) {
+		margin-bottom: rem(45);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: rem(-20);
+		left: 0;
+		width: 40%;
+		height: 1px;
+		background-color: $accentColor;
+	}
+}
