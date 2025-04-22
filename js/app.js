@@ -3677,6 +3677,10 @@
                         slidesPerView: 1,
                         spaceBetween: 15
                     },
+                    575: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
                     768: {
                         slidesPerView: 2,
                         spaceBetween: 20,

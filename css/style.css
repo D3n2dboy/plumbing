@@ -561,7 +561,7 @@ body::after {
 }
 
 .hello__text {
-  line-height: 2;
+  line-height: 1.4;
 }
 
 .hello__text:not(:last-child) {
@@ -885,10 +885,6 @@ body::after {
     line-height: 1.4;
     width: 72%;
   }
-
-  .hello__text {
-    font-size: 1.125rem;
-  }
 }
 
 @media (min-width: 47.99875em) and (any-hover: hover) {
@@ -959,6 +955,14 @@ body::after {
 }
 
 @media (max-width: 47.99875em) {
+  .button {
+    padding: 0.75rem 1.5625rem;
+  }
+
+  .header__logo {
+    font-size: 1.25rem;
+  }
+
   .header__menu {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
@@ -984,6 +988,9 @@ body::after {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 2.1875rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .menu__link {
@@ -1043,11 +1050,51 @@ body::after {
   }
 
   .preview__title {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
+  }
+
+  .hello {
+    padding: 2.1875rem 0;
+  }
+
+  .hello__top {
+    font-size: 0.875rem;
+  }
+
+  .product {
+    padding: 2.1875rem 0;
+  }
+
+  .product__content {
+    padding: 1.25rem;
+  }
+
+  .swiper-slide__title {
+    font-size: 1.125rem;
+  }
+
+  .swiper-slide__sub-title {
+    font-size: 0.875rem;
+  }
+
+  .assortment {
+    padding: 2.1875rem 0;
   }
 
   .assortment__item {
     width: 100%;
+  }
+
+  .assortment__label {
+    font-size: 1.125rem;
+  }
+
+  .assortment__text {
+    font-size: 0.875rem;
+  }
+
+  .brands {
+    padding: 2.1875rem 0;
   }
 
   .brands__items {
@@ -1058,11 +1105,23 @@ body::after {
     width: 33.33%;
     padding: 0 0.625rem;
   }
+
+  .callback {
+    padding: 2.1875rem 0;
+  }
 }
 
 @media (max-width: 29.99875em) {
+  .header__logo-subtitle {
+    font-size: 0.75rem;
+  }
+
   .menu__body {
     width: 100%;
+  }
+
+  .callback__form {
+    padding: 0.9375rem;
   }
 }
 
