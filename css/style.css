@@ -1116,6 +1116,10 @@ body::after {
     font-size: 0.75rem;
   }
 
+  .header__button {
+    padding: 0.3125rem;
+  }
+
   .menu__body {
     width: 100%;
   }
