@@ -1098,12 +1098,17 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
+  .header__logo {
+    font-size: 1rem;
+  }
+
   .header__logo-subtitle {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   .header__button {
     padding: 0.3125rem;
+    font-size: 0.625rem;
   }
 
   .menu__body {
